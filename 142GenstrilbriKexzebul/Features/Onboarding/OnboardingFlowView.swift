@@ -230,7 +230,8 @@ private struct OnboardingIllustrationBalance: View {
                 context.stroke(base, with: .color(Color.appTextSecondary.opacity(0.22)), lineWidth: 14)
 
                 var arc = Path()
-                arc.addArc(center: center, radius: radius, startAngle: .degrees(-90), endAngle: .degrees(-90 + 360 * sweep), clockwise: false)
+                let endDegrees = -90.0 + 360.0 * Double(sweep)
+                arc.addArc(center: center, radius: radius, startAngle: .degrees(-90), endAngle: .degrees(endDegrees), clockwise: false)
                 context.stroke(arc, with: .color(Color.appAccent), style: StrokeStyle(lineWidth: 14, lineCap: .round))
             }
             .frame(height: 240)
