@@ -41,6 +41,11 @@
 		300483C92F9623DF00B3ED85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300483A02F9623DF00B3ED85 /* Assets.xcassets */; };
 		300483CB2F9623DF00B3ED85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300483A42F9623DF00B3ED85 /* LaunchScreen.storyboard */; };
 		300483CC2F9623DF00B3ED85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300483A62F9623DF00B3ED85 /* Main.storyboard */; };
+		300493AD2F994AF800B3ED85 /* StartMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300493AB2F994AF800B3ED85 /* StartMainView.swift */; };
+		300493AE2F994AF800B3ED85 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300493A82F994AF800B3ED85 /* PersistenceManager.swift */; };
+		300493AF2F994AF800B3ED85 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300493A72F994AF800B3ED85 /* AppRouter.swift */; };
+		300493B02F994AF800B3ED85 /* PrivacyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300493A92F994AF800B3ED85 /* PrivacyWebView.swift */; };
+		300493B12F994AF800B3ED85 /* SaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300493AA2F994AF800B3ED85 /* SaveService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +86,11 @@
 		300483A52F9623DF00B3ED85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		300483A72F9623DF00B3ED85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		300483A82F9623DF00B3ED85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		300493A72F994AF800B3ED85 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		300493A82F994AF800B3ED85 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		300493A92F994AF800B3ED85 /* PrivacyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyWebView.swift; sourceTree = "<group>"; };
+		300493AA2F994AF800B3ED85 /* SaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveService.swift; sourceTree = "<group>"; };
+		300493AB2F994AF800B3ED85 /* StartMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMainView.swift; sourceTree = "<group>"; };
 		4A7145FEA74B96746B9C69C0 /* Pods-142GenstrilbriKexzebul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-142GenstrilbriKexzebul.release.xcconfig"; path = "Target Support Files/Pods-142GenstrilbriKexzebul/Pods-142GenstrilbriKexzebul.release.xcconfig"; sourceTree = "<group>"; };
 		5E68395DA1137E7401F78F0A /* Pods_142GenstrilbriKexzebul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_142GenstrilbriKexzebul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -352,8 +362,21 @@
 				300483A62F9623DF00B3ED85 /* Main.storyboard */,
 				300483A72F9623DF00B3ED85 /* SceneDelegate.swift */,
 				300483A82F9623DF00B3ED85 /* ViewController.swift */,
+				300493AC2F994AF800B3ED85 /* Router */,
 			);
 			path = 142GenstrilbriKexzebul;
+			sourceTree = "<group>";
+		};
+		300493AC2F994AF800B3ED85 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				300493A72F994AF800B3ED85 /* AppRouter.swift */,
+				300493A82F994AF800B3ED85 /* PersistenceManager.swift */,
+				300493A92F994AF800B3ED85 /* PrivacyWebView.swift */,
+				300493AA2F994AF800B3ED85 /* SaveService.swift */,
+				300493AB2F994AF800B3ED85 /* StartMainView.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		AE3287B3D67BF4B8344A88A9 /* Pods */ = {
@@ -483,6 +506,11 @@
 				300483B42F9623DF00B3ED85 /* BudgetArchitectViewModel.swift in Sources */,
 				300483B52F9623DF00B3ED85 /* GoalTimeframeView.swift in Sources */,
 				300483B62F9623DF00B3ED85 /* GoalTimeframeViewModel.swift in Sources */,
+				300493AD2F994AF800B3ED85 /* StartMainView.swift in Sources */,
+				300493AE2F994AF800B3ED85 /* PersistenceManager.swift in Sources */,
+				300493AF2F994AF800B3ED85 /* AppRouter.swift in Sources */,
+				300493B02F994AF800B3ED85 /* PrivacyWebView.swift in Sources */,
+				300493B12F994AF800B3ED85 /* SaveService.swift in Sources */,
 				300483B72F9623DF00B3ED85 /* HabitStreakView.swift in Sources */,
 				300483B82F9623DF00B3ED85 /* HabitStreakViewModel.swift in Sources */,
 				300483B92F9623DF00B3ED85 /* CategoryBudgetsView.swift in Sources */,
@@ -548,7 +576,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.luk.g8nstr9lbr0k3x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -587,7 +615,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.luk.g8nstr9lbr0k3x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
